@@ -910,7 +910,7 @@ class PlayState extends MusicBeatState
 		add(scoreTxt);
 
 		creditTxt = new FlxText(876, 620, 348);
-        creditTxt.text = 'Ported By NerySonic';
+        creditTxt.text = 'Ported by Name';
         creditTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, RIGHT);
         creditTxt.setBorderStyle(OUTLINE, FlxColor.BLACK, 3, 1);       
         creditTxt.scrollFactor.set();
@@ -1044,9 +1044,6 @@ class PlayState extends MusicBeatState
 				case 'senpai' | 'roses' | 'thorns':
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
-				case"rabbit's-luck"|"rabbit's-luck-hard":                
-			                  startDialogue(dialogueJson)
-				
 				default:
 					if (dialogueJson == null)
 						startCountdown();
